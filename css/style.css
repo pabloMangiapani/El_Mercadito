@@ -1,0 +1,27 @@
+.nav-log{
+    background-color: darkcyan !important;
+}
+
+div a img{
+    width: 120px !important;
+    height: 120px !important;
+}
+.logo{
+    background-color: darkcyan;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#texto-inicio{
+    display: flex !important;
+    justify-content: center !important;
+    background-color:  rgb(53, 47, 47);
+    color: sandybrown;
+    font-size: 15px;
+}
+
+.bienvenida{
+    color: rebeccapurple;
+    font-size: 45px;
+    background-color: cadetblue;
+}
