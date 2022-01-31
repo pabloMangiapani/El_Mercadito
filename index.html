@@ -14,33 +14,190 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div>
-      <header>
-        <nav class="navbar navbar-light bg-light nav-log">
-          <div class="container-fluid logo row">
-            <a class="navbar-brand" href="#">
-              <img
-                src="assets/img/favicon.jpg"
-                alt="logo"
-                width="80"
-                height="85"
-              />
-            </a>
-            <div>
-                <h1 class="bienvenida">
-                    BIENVENIDO A LA MEJOR VINOTECA DE LA PLATA Y ALREDEDORES 
-                </h1>
+  <body class="body">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo" href="#"
+          ><img src="assets/img/favicon.jpg" alt="logo" width="100" height="105"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse btn-buscar"
+          id="navbarSupportedContent"
+        >
+        <div class="logo-carrito">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+            />
+          </svg>
+        </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="buscar"
+              placeholder="busca tu drink"
+              aria-label="buscar"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              buscar
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
 
-                <P class="lead" id="texto-inicio">
-                    Disfruta de comprar la bebida que mas te guste, al mejor precio y con envios sin costo 
-                    dentro de La Plata y alrededores! No esperes mas y hace tu pedido!  
-                </P>
+    <main class="main">
+      <div class="title text-center py-5">
+        <h1>Bienvenido a la mejor vinoteca de La Plata y alrededores</h1>
+      </div>
+      
+      <div class="row mx-5 py-4">
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/absolutRaspberri.jpg" alt="imagen absolut raspberri" class="card-img-top">
+            <div class="card-body">
+              <h1>Vodka Raspberri.750ML</h1>
+              <p>$2500</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
             </div>
+
           </div>
-        </nav>
-      </header>
-    </div>
+        </div>
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/vodkaGreyGoose.jpg" alt="imagen grey goose" class="card-img-top">
+            <div class="card-body">
+              <h1>Vodka Grey Goose.750ML</h1>
+              <p>$9200</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/ginBeefeater.jpg" alt="imagen gin beefeater" class="card-img-top">
+            <div class="card-body">
+              <h1>Beefeater London Dry Gin.1000ML</h1>
+              <p>$2700</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mx-5 py-4">
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/ginBombay.jpg" alt="imagen gin bombay" class="card-img-top">
+            <div class="card-body">
+              <h1>Bombay Sapphire London Dry Gin.750ML</h1>
+              <p>$2650</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/johnnieWalkerBlack.jpg" alt="imagen johnnie walker black" class="card-img-top">
+            <div class="card-body">
+              <h1>Whisky Johnnie Walker Black Label.750ML</h1>
+              <p>$3700</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/johnnieWalkerBlue.jpg" alt="imagen johnnie walker blue" class="card-img-top">
+            <div class="card-body">
+              <h1>Whisky Johnnie Walker Blue Label.750ML</h1>
+              <p>$27500</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mx-5 py-4">
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/campari.jpg" alt="imagen campari" class="card-img-top">
+            <div class="card-body">
+              <h1>Campari Aperitivo.750ML</h1>
+              <p>$750</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/fernetBranca750.jpg" alt="imagen fernet branca" class="card-img-top">
+            <div class="card-body">
+              <h1>Fernet Branca.750ML</h1>
+              <p>$950</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col ml-5">
+
+          <div class="card h-100" style="width: 18rem;">
+            <img src="assets/img/corona.jpg" alt="imagen gin beefeater" class="card-img-top">
+            <div class="card-body">
+              <h1>Six Pack Cerbeza Coronona.330ML 6U</h1>
+              <p>$1030</p>
+              <a href="#" class="btn btn-primary">COMPRAR</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
 
     <script src="js/miarchivo.js"></script>
   </body>

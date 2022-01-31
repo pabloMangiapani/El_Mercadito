@@ -15,7 +15,9 @@ while (edad < 18 || edad > 17) {
       apellido = prompt("ingresa tu apellido");
    }
  }
+ break
 }
+
 
 //calcular precio con iva de un producto
 function suma(a,b){
@@ -33,4 +35,13 @@ let precioLista = 3550;
 let precioFinal = suma(precioLista,iva(precioLista));
 console.log(precioFinal);
 
+//array bebidas
+
+const bebidas = ["Vodka Raspberri.750ML", "Vodka Grey Goose.750ML", "Beefeater London Dry Gin.1000ML", "Bombay Sapphire London Dry Gin.750ML", "Whisky Johnnie Walker Black Label.750ML", "Whisky Johnnie Walker Blue Label.750ML", "Campari Aperitivo.750ML"]
+
+console.log(bebidas);
+
+bebidas.push('Fernet Branca.750ML','Six Pack Cerbeza Coronona.330ML 6U');
+
+console.log(bebidas);
 

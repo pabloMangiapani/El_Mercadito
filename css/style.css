@@ -1,27 +1,32 @@
-.nav-log{
-    background-color: darkcyan !important;
-}
-
-div a img{
-    width: 120px !important;
-    height: 120px !important;
+.header .navbar {
+    background-color: transparent !important;
+  }
+.header{
+    background: rgb(63, 60, 60) !important;
 }
 .logo{
-    background-color: darkcyan;
-    display: flex !important;
-    justify-content: center !important;
+    padding-left: 30px;
+}
+.btn-buscar{
+    display: flex;
+    justify-content: flex-end !important;
+    padding-right: 30px;
+}
+.bi{
+    color: white;
 }
 
-#texto-inicio{
-    display: flex !important;
-    justify-content: center !important;
-    background-color:  rgb(53, 47, 47);
-    color: sandybrown;
-    font-size: 15px;
+.logo-carrito{
+    padding-right: 15px;
 }
 
-.bienvenida{
-    color: rebeccapurple;
-    font-size: 45px;
-    background-color: cadetblue;
+.btn-outline-success{
+    color: rgb(67, 114, 216);
+    border-color: cornflowerblue !important;
+}
+
+.main{
+    background: url(../assets/img/bebidasAlcoholicas1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
 }
