@@ -11,11 +11,14 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="body">
+  <body>
+    <!-- empieza la nav -->
     <header class="header">
+      <!-- logo -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand logo" href="#"
           ><img src="assets/img/favicon.jpg" alt="logo" width="100" height="105"
@@ -35,6 +38,7 @@
           class="collapse navbar-collapse btn-buscar"
           id="navbarSupportedContent"
         >
+        <!-- icono carrito -->
         <div class="logo-carrito">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +52,7 @@
               d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
             />
           </svg>
+          <!-- botones para hacer busqueda de bebidas -->
         </div>
           <form class="form-inline my-2 my-lg-0">
             <input
@@ -63,12 +68,16 @@
         </div>
       </nav>
     </header>
+    <!-- finaliza la nav -->
 
+
+    <!-- empieza el main -->
     <main class="main">
+      <!-- texto bienvenida -->
       <div class="title text-center py-5">
         <h1>Bienvenido a la mejor vinoteca de La Plata y alrededores</h1>
       </div>
-      
+      <!-- productos en venta -->
       <div class="row mx-5 py-4">
 
         <div class="col ml-5">
@@ -198,6 +207,83 @@
 
       </div>
     </main>
+    <!-- finaliza el main -->
+
+    <!-- empieza el footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+      <div class="container text-center text-md-left">
+    
+        <div class="row">
+         
+          <!-- Grid Sucursales -->
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <h5 class="font-weight-bold text-uppercase mb-4">Sucursales</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i> La Plata, 56 e/9 y 10 Nº708</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i> La Plata, 19 e/46 y 47 Nº711</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i> La Plata, 1 esq. 47</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i> Berisso, 167 e/14 y 15</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i>City Bell, Cno. Gral. Belgrano 467 y 471</p>
+              </li>
+            </ul>
+    
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+    
+            <!-- botones iconos de redes sociales -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Contactanos:</h5>
+    
+            <!-- Facebook -->
+            <a type="button" class="btn-floating btn-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Instagram -->
+            <a type="button" class="btn-floating btn-in">
+              <i class="fab fa-instagram"></i>
+            </a>
+             <!-- whatsapp -->
+             <a type="button" class="btn-floating btn-in">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+             <!-- Instagram -->
+             <a type="button" class="btn-floating btn-in">
+              <i class="fab fa-phone"></i>
+            </a>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <p>2022 ©  Copyright El Mercadito S.R.L</p>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+   
 
     <script src="js/miarchivo.js"></script>
   </body>

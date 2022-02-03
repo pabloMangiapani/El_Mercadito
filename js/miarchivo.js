@@ -35,13 +35,34 @@ let precioLista = 3550;
 let precioFinal = suma(precioLista,iva(precioLista));
 console.log(precioFinal);
 
-//array bebidas
 
-const bebidas = ["Vodka Raspberri.750ML", "Vodka Grey Goose.750ML", "Beefeater London Dry Gin.1000ML", "Bombay Sapphire London Dry Gin.750ML", "Whisky Johnnie Walker Black Label.750ML", "Whisky Johnnie Walker Blue Label.750ML", "Campari Aperitivo.750ML"]
 
-console.log(bebidas);
+// bebidas en base a objetos
+const absolutRaspberry = { producto: "Vodka Raspberri.750ML", precio: 2500};
+const greyGoose = { producto: "Vodka Grey Goose.750ML", precio: 9200};
+const beefeaterGin = { producto: "Beefeater London Dry Gin.1000M", precio: 2700};
+const bombayGin = { producto: "Bombay Sapphire London Dry Gin.750ML", precio: 2650};
+const johnnieWalkerBlack = { producto: "Whisky Johnnie Walker Black Label.750ML", precio: 3700};
+const johnnieWalkerBlue = { producto: "Whisky Johnnie Walker Blue Label.750ML", precio: 27500};
+const campari = { producto: "Campari Aperitivo.750ML", precio: 750};
 
-bebidas.push('Fernet Branca.750ML','Six Pack Cerbeza Coronona.330ML 6U');
+//array bebidas en base a objetos 
+const bebidas = [absolutRaspberry , greyGoose , beefeaterGin , bombayGin , johnnieWalkerBlack , johnnieWalkerBlue , campari];
 
-console.log(bebidas);
+bebidas.push({producto: "Fernet Branca.750ML", precio: 950},{producto: "Six Pack Cerbeza Coronona.330ML 6U", precio: 1030})
+
+console.log(bebidas)
+
+bebidas.sort((a,b) => {
+  if (a.precio > b.precio) {
+    return 1;
+  }
+  if (a.precio < b.precio) {
+    return -1;
+  }
+
+  return 0;
+})
+
+
 
