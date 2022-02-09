@@ -2,7 +2,7 @@
     background-color: transparent !important;
   }
 .header{
-    background: rgb(63, 60, 60) !important;
+    background-color: rgb(163, 141, 113)!important;
 }
 .logo{
     padding-left: 30px;
@@ -16,17 +16,42 @@
     color: white;
 }
 
-.logo-carrito{
-    padding-right: 15px;
+.logo-carrito a:hover{
+    transform: translateY(-4px) scale(1.05);
 }
 
 .btn-outline-success{
-    color: rgb(67, 114, 216);
-    border-color: cornflowerblue !important;
+    color: rgb(230, 232, 235);
+    border-color: rgb(234, 235, 238) !important;
+}
+
+.title{
+    color: rgb(230, 232, 235);
 }
 
 .main{
-    background: url(../assets/img/bebidasAlcoholicas1.jpg) no-repeat center;
+    background: url(../assets/img/uvasVintage.jpg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
 }
+
+.btn-in{
+    width: 20px;
+    height: 20px;
+}
+
+.instagram{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.redes a:hover{
+    transform: translateY(-3px) scale(1.05);
+}
+
+.page-footer{
+    background-color: rgb(163, 141, 113);
+}
+
