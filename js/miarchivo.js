@@ -96,7 +96,7 @@ bebidas.push(
   }
 );
 
-console.log(bebidas);
+// console.log(bebidas);
 
 bebidas.sort((a, b) => {
   if (a.precio > b.precio) {
@@ -108,6 +108,25 @@ bebidas.sort((a, b) => {
 
   return 0;
 });
+
+//productos usando DOM
+
+// const items = document.getElementById('items');
+// const templateCard = document.querySelector('template-card')
+// const fragment = document.createDocumentFragment();
+// const bebida = document.querySelector('bebidas')
+
+
+// let pintarCard = () => {
+//   bebidas.forEach = bebida => {
+//     const clone = templateCard.cloneNode(true);
+//     clone.querySelector('h3') = producto;
+//     console.log(bebida);
+    
+
+
+//     fragment.appendChild(clone);
+//   };
 
 for (const bebida of bebidas) {
   let productos = document.createElement("div");
@@ -128,6 +147,19 @@ for (const bebida of bebidas) {
     </div>`;
 
   productos.className = "row mx-5 py-4";
-
+  
   document.body.appendChild(productos);
 }
+
+  //uso JSON en array bebidas
+
+  localStorage.setItem("listaBebidas", JSON.stringify(bebidas));
+
+  let bebidasRecuperadas = JSON.parse(localStorage.getItem('listaBebidas'));
+  console.log(bebidasRecuperadas)
+
+  bebidasRecuperadas.push({
+    producto: "Whisky Johnnie Walker Etiqueta Roja.750ML",
+  precio: 2100,
+    img: "assets/img/JohnniewalkerEtiquetaRoja.jpg",
+  },)
