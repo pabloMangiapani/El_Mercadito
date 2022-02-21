@@ -1,6 +1,9 @@
 let edad = "";
 let nombre = "";
 let apellido = "";
+
+
+
 //pedido para validar edad
 while (edad < 18 || edad > 17) {
   edad = prompt("ingresa tu edad");
@@ -16,8 +19,15 @@ while (edad < 18 || edad > 17) {
       apellido = prompt("ingresa tu apellido");
     }
   }
+  //uso operador ternario
+const permiso = (edad >= 18) ? true : false
+
+permiso ? alert("Puede comprar bebidas") : alert("No puedes comprar bebidas")
   break;
 }
+
+
+
 
 //calcular precio con iva de un producto
 function suma(a, b) {
@@ -41,36 +51,50 @@ const absolutRaspberry = {
   precio: 2500,
   img: "assets/img/absolutRaspberri.jpg",
 };
+//uso desestructuracion de bebidas por producto y precio
+const {producto, precio} = absolutRaspberry
+console.log(producto)
+console.log(precio)
+
 const greyGoose = {
   producto: "Vodka Grey Goose.750ML",
   precio: 9200,
   img: "assets/img/vodkaGreyGoose.jpg",
 };
+
 const beefeaterGin = {
   producto: "Beefeater London Dry Gin.1000M",
   precio: 2700,
   img: "assets/img/ginBeefeater.jpg",
 };
+
 const bombayGin = {
   producto: "Bombay Sapphire London Dry Gin.750ML",
   precio: 2650,
   img: "assets/img/ginBombay.jpg",
 };
+
 const johnnieWalkerBlack = {
   producto: "Whisky Johnnie Walker Black Label.750ML",
   precio: 3700,
   img: "assets/img/johnnieWalkerBlack.jpg",
 };
+
 const johnnieWalkerBlue = {
   producto: "Whisky Johnnie Walker Blue Label.750ML",
   precio: 27500,
   img: "assets/img/johnnieWalkerBlue.jpg",
 };
+
 const campari = {
   producto: "Campari Aperitivo.750ML",
   precio: 750,
   img: "assets/img/campari.jpg",
 };
+
+//agrego stock a producto campari usando spread
+const campari1 = {...campari, stock:50};
+console.log(campari1);
 
 //array bebidas en base a objetos
 const bebidas = [
@@ -96,7 +120,7 @@ bebidas.push(
   }
 );
 
-// console.log(bebidas);
+console.log(bebidas);
 
 bebidas.sort((a, b) => {
   if (a.precio > b.precio) {
@@ -160,6 +184,7 @@ for (const bebida of bebidas) {
 
   bebidasRecuperadas.push({
     producto: "Whisky Johnnie Walker Etiqueta Roja.750ML",
-  precio: 2100,
+    precio: 2100,
     img: "assets/img/JohnniewalkerEtiquetaRoja.jpg",
   },)
+  console.log(bebidasRecuperadas)
