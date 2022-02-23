@@ -2,8 +2,6 @@ let edad = "";
 let nombre = "";
 let apellido = "";
 
-
-
 //pedido para validar edad
 while (edad < 18 || edad > 17) {
   edad = prompt("ingresa tu edad");
@@ -20,14 +18,11 @@ while (edad < 18 || edad > 17) {
     }
   }
   //uso operador ternario
-const permiso = (edad >= 18) ? true : false
+  const permiso = edad >= 18 ? true : false;
 
-permiso ? alert("Puede comprar bebidas") : alert("No puedes comprar bebidas")
+  permiso ? alert("Puede comprar bebidas") : alert("No puedes comprar bebidas");
   break;
 }
-
-
-
 
 //calcular precio con iva de un producto
 function suma(a, b) {
@@ -52,9 +47,9 @@ const absolutRaspberry = {
   img: "assets/img/absolutRaspberri.jpg",
 };
 //uso desestructuracion de bebidas por producto y precio
-const {producto, precio} = absolutRaspberry
-console.log(producto)
-console.log(precio)
+const { producto, precio } = absolutRaspberry;
+console.log(producto);
+console.log(precio);
 
 const greyGoose = {
   producto: "Vodka Grey Goose.750ML",
@@ -93,7 +88,7 @@ const campari = {
 };
 
 //agrego stock a producto campari usando spread
-const campari1 = {...campari, stock:50};
+const campari1 = { ...campari, stock: 50 };
 console.log(campari1);
 
 //array bebidas en base a objetos
@@ -140,14 +135,11 @@ bebidas.sort((a, b) => {
 // const fragment = document.createDocumentFragment();
 // const bebida = document.querySelector('bebidas')
 
-
 // let pintarCard = () => {
 //   bebidas.forEach = bebida => {
 //     const clone = templateCard.cloneNode(true);
 //     clone.querySelector('h3') = producto;
 //     console.log(bebida);
-    
-
 
 //     fragment.appendChild(clone);
 //   };
@@ -165,26 +157,38 @@ for (const bebida of bebidas) {
         <div class="card-body">
           <h1>${bebida.producto}</h1>
           <p>${bebida.precio}</p>
-          <a href="#" class="btn btn-primary" onclick="alert('Agregado al Carrito');">COMPRAR</a>
+          <a href="#" id="btn-comprar" class="btn btn-primary" ;">COMPRAR</a>
         </div>
       </div>
     </div>`;
 
   productos.className = "row mx-5 py-4";
-  
+
   document.body.appendChild(productos);
 }
 
-  //uso JSON en array bebidas
+//uso sweet alert en boton comprar
 
-  localStorage.setItem("listaBebidas", JSON.stringify(bebidas));
+const btn = document.querySelector("#btn-comprar");
+btn.addEventListener("click", () => {
+  Swal.fire({
+    text: "Agregaste el producto al carrito",
+    backdrop: true,
+    showConfirmButton: false,
+    timer: 1000
+  })
+})
 
-  let bebidasRecuperadas = JSON.parse(localStorage.getItem('listaBebidas'));
-  console.log(bebidasRecuperadas)
+//uso JSON en array bebidas
 
-  bebidasRecuperadas.push({
-    producto: "Whisky Johnnie Walker Etiqueta Roja.750ML",
-    precio: 2100,
-    img: "assets/img/JohnniewalkerEtiquetaRoja.jpg",
-  },)
-  console.log(bebidasRecuperadas)
+localStorage.setItem("listaBebidas", JSON.stringify(bebidas));
+
+let bebidasRecuperadas = JSON.parse(localStorage.getItem("listaBebidas"));
+console.log(bebidasRecuperadas);
+
+bebidasRecuperadas.push({
+  producto: "Whisky Johnnie Walker Etiqueta Roja.750ML",
+  precio: 2100,
+  img: "assets/img/JohnniewalkerEtiquetaRoja.jpg",
+});
+console.log(bebidasRecuperadas);
