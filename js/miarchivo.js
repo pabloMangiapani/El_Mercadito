@@ -2,6 +2,7 @@ let edad = "";
 let nombre = "";
 let apellido = "";
 
+
 //pedido para validar edad
 while (edad < 18 || edad > 17) {
   edad = prompt("ingresa tu edad");
@@ -39,112 +40,124 @@ function iva(x) {
 let precioLista = 3550;
 let precioFinal = suma(precioLista, iva(precioLista));
 console.log(precioFinal);
+// integro json con fetch
 
-// bebidas en base a objetos
-const absolutRaspberry = {
-  producto: "Vodka Raspberri.750ML",
-  precio: 2500,
-  img: "assets/img/absolutRaspberri.jpg",
-};
-//uso desestructuracion de bebidas por producto y precio
-const { producto, precio } = absolutRaspberry;
-console.log(producto);
-console.log(precio);
+// document.addEventListener('DOMContentLoaded', () => {
+//   fetchData();
+// })
 
-const greyGoose = {
-  producto: "Vodka Grey Goose.750ML",
-  precio: 9200,
-  img: "assets/img/vodkaGreyGoose.jpg",
-};
+// const fetchData = async () => {
+//   try{
+//     const res = await fetch('prod.json');
+//     const data = await res.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
 
-const beefeaterGin = {
-  producto: "Beefeater London Dry Gin.1000M",
-  precio: 2700,
-  img: "assets/img/ginBeefeater.jpg",
-};
 
-const bombayGin = {
-  producto: "Bombay Sapphire London Dry Gin.750ML",
-  precio: 2650,
-  img: "assets/img/ginBombay.jpg",
-};
+// // bebidas en base a objetos
+// const absolutRaspberry = {
+//   producto: "Vodka Raspberri.750ML",
+//   precio: 2500,
+//   img: "assets/img/absolutRaspberri.jpg",
+// };
+// //uso desestructuracion de bebidas por producto y precio
+// const { producto, precio } = absolutRaspberry;
+// console.log(producto);
+// console.log(precio);
 
-const johnnieWalkerBlack = {
-  producto: "Whisky Johnnie Walker Black Label.750ML",
-  precio: 3700,
-  img: "assets/img/johnnieWalkerBlack.jpg",
-};
+// const greyGoose = {
+//   producto: "Vodka Grey Goose.750ML",
+//   precio: 9200,
+//   img: "assets/img/vodkaGreyGoose.jpg",
+// };
 
-const johnnieWalkerBlue = {
-  producto: "Whisky Johnnie Walker Blue Label.750ML",
-  precio: 27500,
-  img: "assets/img/johnnieWalkerBlue.jpg",
-};
+// const beefeaterGin = {
+//   producto: "Beefeater London Dry Gin.1000M",
+//   precio: 2700,
+//   img: "assets/img/ginBeefeater.jpg",
+// };
 
-const campari = {
-  producto: "Campari Aperitivo.750ML",
-  precio: 750,
-  img: "assets/img/campari.jpg",
-};
+// const bombayGin = {
+//   producto: "Bombay Sapphire London Dry Gin.750ML",
+//   precio: 2650,
+//   img: "assets/img/ginBombay.jpg",
+// };
 
-//agrego stock a producto campari usando spread
-const campari1 = { ...campari, stock: 50 };
-console.log(campari1);
+// const johnnieWalkerBlack = {
+//   producto: "Whisky Johnnie Walker Black Label.750ML",
+//   precio: 3700,
+//   img: "assets/img/johnnieWalkerBlack.jpg",
+// };
+
+// const johnnieWalkerBlue = {
+//   producto: "Whisky Johnnie Walker Blue Label.750ML",
+//   precio: 27500,
+//   img: "assets/img/johnnieWalkerBlue.jpg",
+// };
+
+// const campari = {
+//   producto: "Campari Aperitivo.750ML",
+//   precio: 750,
+//   img: "assets/img/campari.jpg",
+// };
+
+// //agrego stock a producto campari usando spread
+// const campari1 = { ...campari, stock: 50 };
+// console.log(campari1);
 
 //array bebidas en base a objetos
-const bebidas = [
-  absolutRaspberry,
-  greyGoose,
-  beefeaterGin,
-  bombayGin,
-  johnnieWalkerBlack,
-  johnnieWalkerBlue,
-  campari,
-];
+// const bebidas = [
+//   absolutRaspberry,
+//   greyGoose,
+//   beefeaterGin,
+//   bombayGin,
+//   johnnieWalkerBlack,
+//   johnnieWalkerBlue,
+//   campari,
+// ];
 
-bebidas.push(
-  {
-    producto: "Fernet Branca.750ML",
-    precio: 950,
-    img: "assets/img/fernetBranca750.jpg",
-  },
-  {
-    producto: "Six Pack Cerbeza Coronona.330ML 6U",
-    precio: 1030,
-    img: "assets/img/corona.jpg",
-  }
-);
+// bebidas.push(
+//   {
+//     producto: "Fernet Branca.750ML",
+//     precio: 950,
+//     img: "assets/img/fernetBranca750.jpg",
+//   },
+//   {
+//     producto: "Six Pack Cerbeza Coronona.330ML 6U",
+//     precio: 1030,
+//     img: "assets/img/corona.jpg",
+//   }
+// );
 
-console.log(bebidas);
+// console.log(bebidas);
 
-bebidas.sort((a, b) => {
-  if (a.precio > b.precio) {
-    return 1;
-  }
-  if (a.precio < b.precio) {
-    return -1;
-  }
+// bebidas.sort((a, b) => {
+//   if (a.precio > b.precio) {
+//     return 1;
+//   }
+//   if (a.precio < b.precio) {
+//     return -1;
+//   }
 
-  return 0;
-});
+//   return 0;
+// });
 
-//productos usando DOM
 
-// const items = document.getElementById('items');
-// const templateCard = document.querySelector('template-card')
-// const fragment = document.createDocumentFragment();
-// const bebida = document.querySelector('bebidas')
 
-// let pintarCard = () => {
-//   bebidas.forEach = bebida => {
-//     const clone = templateCard.cloneNode(true);
-//     clone.querySelector('h3') = producto;
-//     console.log(bebida);
+// //productos usando DOM
+const bebidas = async() => {
+  const resp = await
 
-//     fragment.appendChild(clone);
-//   };
+  fetch('/prod.json')
+  const data = await resp.json ()
 
-for (const bebida of bebidas) {
+  console.log(resp);
+
+  data.forEach ((bebida) => {
+
   let productos = document.createElement("div");
   //Definimos el innerHTML del elemento con una plantilla de texto
   productos.innerHTML = `<div class="col ml-5">
@@ -165,30 +178,33 @@ for (const bebida of bebidas) {
   productos.className = "row mx-5 py-4";
 
   document.body.appendChild(productos);
-}
-
-//uso sweet alert en boton comprar
-
-const btn = document.querySelector("#btn-comprar");
-btn.addEventListener("click", () => {
-  Swal.fire({
-    text: "Agregaste el producto al carrito",
-    backdrop: true,
-    showConfirmButton: false,
-    timer: 1000
-  })
 })
 
-//uso JSON en array bebidas
+}
 
-localStorage.setItem("listaBebidas", JSON.stringify(bebidas));
+// //uso sweet alert en boton comprar
 
-let bebidasRecuperadas = JSON.parse(localStorage.getItem("listaBebidas"));
-console.log(bebidasRecuperadas);
+// const btn = document.querySelector("#btn-comprar");
+// btn.addEventListener("click", () => {
+//   Swal.fire({
+//     text: "Agregaste el producto al carrito",
+//     backdrop: true,
+//     showConfirmButton: false,
+//     timer: 1000
+//   })
+// })
 
-bebidasRecuperadas.push({
-  producto: "Whisky Johnnie Walker Etiqueta Roja.750ML",
-  precio: 2100,
-  img: "assets/img/JohnniewalkerEtiquetaRoja.jpg",
-});
-console.log(bebidasRecuperadas);
+
+// //uso JSON en array bebidas
+
+// localStorage.setItem("listaBebidas", JSON.stringify(bebidas));
+
+// let bebidasRecuperadas = JSON.parse(localStorage.getItem("listaBebidas"));
+// console.log(bebidasRecuperadas);
+
+// bebidasRecuperadas.push({
+//   producto: "Whisky Johnnie Walker Etiqueta Roja.750ML",
+//   precio: 2100,
+//   img: "assets/img/JohnniewalkerEtiquetaRoja.jpg",
+// });
+// console.log(bebidasRecuperadas);

@@ -1,0 +1,50 @@
+[
+
+    {
+       "producto": "Vodka Grey Goose.750ML",
+       "precio": 9200,
+       "img": "assets/img/vodkaGreyGoose.jpg"
+     },
+     
+      {
+       "producto": "Beefeater London Dry Gin.1000M",
+       "precio": 2700,
+       "img": "assets/img/ginBeefeater.jpg"
+     },
+     
+     {
+       "producto": "Bombay Sapphire London Dry Gin.750ML",
+       "precio": 2650,
+       "img": "assets/img/ginBombay.jpg"
+     },
+     
+     {
+       "producto": "Whisky Johnnie Walker Black Label.750ML",
+       "precio": 3700,
+       "img": "assets/img/johnnieWalkerBlack.jpg"
+     },
+     
+     {
+       "producto": "Whisky Johnnie Walker Blue Label.750ML",
+       "precio": 27500,
+       "img": "assets/img/johnnieWalkerBlue.jpg"
+     },
+     
+     {
+       "producto": "Campari Aperitivo.750ML",
+       "precio": 750,
+       "img": "assets/img/campari.jpg"
+     },
+
+     {
+       "producto": "Fernet Branca.750ML",
+       "precio": 950,
+       "img": "assets/img/fernetBranca750.jpg"
+     },
+     {
+       "producto": "Six Pack Cerbeza Coronona.330ML 6U",
+       "precio": 1030,
+       "img": "assets/img/corona.jpg"
+     }
+
+   ]

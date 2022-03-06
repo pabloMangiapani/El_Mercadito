@@ -11,7 +11,12 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -73,27 +78,23 @@
     <main id="productos" class="main">
       <!-- texto bienvenida -->
       <div class="title text-center py-5">
-        <h1 id="bienvenida"> </h1>
+        <h1 id="bienvenida"></h1>
       </div>
       <!-- productos en venta -->
       <div class="row mx-5 py-4" id="items"></div>
 
-        <template id="template-card"> 
-          <div class="col ml-5">
-
-            <div class="card h-100" style="width: 18rem;">
-              <img src="" class="card-img-top">
-              <div class="card-body">
-                <h3></h3>
-                <p></p>
-                <a href="#" id="btn-comprar" class="btn btn-primary">COMPRAR</a>
-              </div>
-
+      <template id="template-card">
+        <div class="col ml-5">
+          <div class="card h-100" style="width: 18rem">
+            <img src="" class="card-img-top" />
+            <div class="card-body">
+              <h3></h3>
+              <p></p>
+              <a href="#" id="btn-comprar" class="btn btn-primary">COMPRAR</a>
             </div>
           </div>
-        </template>  
-
-        
+        </div>
+      </template>
     </main>
     <!-- finaliza el main -->
 
@@ -165,9 +166,8 @@
         <p>2022 © Copyright El Mercadito S.R.L</p>
       </div>
       <!-- Copyright -->
-      
     </footer>
-    
+
     <script src="js/miarchivo.js"></script>
   </body>
 </html>
